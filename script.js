@@ -29,7 +29,7 @@ if (lineLink) {
   } else {
     lineLink.href = "javascript:void(0)";
     lineLink.addEventListener("click", () => {
-      alert("公開前に script.js の LINE_URL に問い合わせ用LINEのURLを設定してください。");
+      alert("LINEのQRコードからお問い合わせください。");
     });
   }
 }
