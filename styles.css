@@ -315,10 +315,9 @@ h3 {
 
 .pdf-deck {
   display: grid;
-  gap: clamp(22px, 4vw, 42px);
-  padding: clamp(28px, 5vw, 64px) clamp(14px, 4vw, 64px) clamp(56px, 7vw, 96px);
-  background:
-    linear-gradient(180deg, #f5f9fc 0%, #ffffff 48%, #f5f9fc 100%);
+  gap: clamp(10px, 2.4vw, 26px);
+  padding: clamp(18px, 4vw, 44px) clamp(10px, 3vw, 44px) clamp(40px, 6vw, 76px);
+  background: var(--white);
 }
 
 .pdf-page {
@@ -326,9 +325,6 @@ h3 {
   margin: 0 auto;
   overflow: hidden;
   background: var(--white);
-  border: 1px solid rgba(220, 229, 238, 0.9);
-  border-radius: 8px;
-  box-shadow: 0 22px 58px rgba(6, 26, 47, 0.12);
 }
 
 .pdf-page img {
