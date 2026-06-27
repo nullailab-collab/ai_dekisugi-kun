@@ -324,6 +324,15 @@ h3 {
   text-align: center;
 }
 
+.service-heading {
+  max-width: none;
+  text-align: center;
+}
+
+.service-heading h2 {
+  white-space: nowrap;
+}
+
 .feature-grid {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -773,6 +782,10 @@ ul {
   .price-grid,
   .contact-box {
     grid-template-columns: 1fr;
+  }
+
+  .service-heading h2 {
+    white-space: normal;
   }
 
   .feature-card,
