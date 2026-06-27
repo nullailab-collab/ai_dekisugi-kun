@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="AIデキ過ぎ君">
+  <rect width="1200" height="630" fill="#f5f8fb"/>
+  <circle cx="110" cy="124" r="82" fill="none" stroke="#c59a37" stroke-width="20"/>
+  <text x="73" y="158" fill="#08213f" font-family="Arial, sans-serif" font-size="108" font-weight="900">Ai</text>
+  <text x="224" y="170" fill="#08213f" font-family="Arial, sans-serif" font-size="82" font-weight="900">AIデキ過ぎ君</text>
+  <text x="80" y="308" fill="#08213f" font-family="Arial, sans-serif" font-size="64" font-weight="900">LINEで投げるだけ。</text>
+  <text x="80" y="396" fill="#132033" font-family="Arial, sans-serif" font-size="38" font-weight="700">小さなお店・会社の外部デジタル担当</text>
+  <rect x="80" y="452" width="410" height="76" rx="38" fill="#09b83e"/>
+  <text x="124" y="503" fill="#ffffff" font-family="Arial, sans-serif" font-size="34" font-weight="900">まずは相談する</text>
+  <rect x="710" y="118" width="360" height="390" rx="36" fill="#08213f"/>
+  <rect x="748" y="176" width="232" height="58" rx="20" fill="#ffffff"/>
+  <rect x="810" y="260" width="220" height="58" rx="20" fill="#09b83e"/>
+  <rect x="748" y="344" width="260" height="58" rx="20" fill="#ffffff"/>
+  <rect x="830" y="428" width="178" height="58" rx="20" fill="#09b83e"/>
+</svg>
