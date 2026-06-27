@@ -50,7 +50,7 @@ figure {
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  padding: 16px clamp(20px, 5vw, 64px);
+  padding: 12px clamp(20px, 5vw, 64px);
   background: rgba(255, 255, 255, 0.94);
   border-bottom: 1px solid rgba(223, 230, 238, 0.8);
   backdrop-filter: blur(14px);
@@ -59,25 +59,16 @@ figure {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  font-weight: 900;
-  color: var(--navy);
-  white-space: nowrap;
+  width: min(310px, 42vw);
+  min-width: 190px;
 }
 
-.brand-mark {
-  display: inline-grid;
-  place-items: center;
-  width: 42px;
-  height: 42px;
-  color: var(--white);
-  font-weight: 900;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--navy), var(--gold));
-}
-
-.brand-text {
-  font-size: 1.15rem;
+.brand-logo {
+  display: block;
+  width: 100%;
+  height: 58px;
+  object-fit: contain;
+  object-position: left center;
 }
 
 .site-nav {
@@ -165,10 +156,6 @@ h2 {
   font-size: clamp(1rem, 2vw, 1.25rem);
 }
 
-.mobile-hero-art {
-  display: none;
-}
-
 .hero-actions,
 .button {
   display: inline-flex;
@@ -238,7 +225,7 @@ h2 {
 
 .hero-visual {
   position: relative;
-  min-height: 500px;
+  min-height: 430px;
 }
 
 .pdf-card,
@@ -257,20 +244,11 @@ h2 {
   height: auto;
 }
 
-.hero-pdf-card {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 28px;
-  z-index: 1;
-  transform: rotate(1.5deg);
-}
-
 .phone {
   position: relative;
   z-index: 2;
   width: min(100%, 380px);
-  margin: 210px 0 0 auto;
+  margin: 0 0 0 auto;
   padding: 28px 20px;
   background: var(--navy);
   border: 12px solid #0d1726;
@@ -311,7 +289,7 @@ h2 {
   position: absolute;
   z-index: 3;
   right: clamp(0px, 2vw, 40px);
-  bottom: 20px;
+  bottom: 0;
   display: grid;
   gap: 10px;
   width: min(300px, 70%);
@@ -339,7 +317,8 @@ h2 {
 
 .problem-showcase,
 .flow-showcase {
-  margin-bottom: 24px;
+  width: min(100%, 760px);
+  margin: 0 0 28px;
 }
 
 .problem-grid,
@@ -408,6 +387,7 @@ h2 {
 
 .service-image {
   margin-top: 8px;
+  width: min(100%, 430px);
 }
 
 .area-grid {
@@ -523,9 +503,9 @@ ul {
   place-items: center;
   min-height: 420px;
   background:
-    linear-gradient(90deg, rgba(8, 33, 63, 0.9), rgba(8, 33, 63, 0.45)),
+    linear-gradient(90deg, rgba(8, 33, 63, 0.96), rgba(8, 33, 63, 0.84)),
     url("/assets/pdf-mission.jpg");
-  background-position: center;
+  background-position: center right;
   background-size: cover;
 }
 
@@ -537,6 +517,7 @@ ul {
 .message h2,
 .message p {
   color: var(--white);
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.26);
 }
 
 .message .eyebrow {
@@ -564,11 +545,13 @@ ul {
 
 .contact-image {
   align-self: stretch;
+  max-height: 340px;
 }
 
 .contact-image img {
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  background: var(--white);
 }
 
 .contact-box code {
@@ -632,7 +615,7 @@ ul {
   }
 
   .phone {
-    margin: 190px auto 0;
+    margin: 0 auto;
   }
 
   .problem-grid,
@@ -677,11 +660,6 @@ ul {
     display: none;
   }
 
-  .mobile-hero-art {
-    display: block;
-    margin: 22px 0 0;
-  }
-
   .task-stack {
     position: static;
     width: 100%;
@@ -699,5 +677,12 @@ ul {
 
   .contact-image img {
     height: auto;
+  }
+
+  .problem-showcase img,
+  .flow-showcase img,
+  .service-image img {
+    max-height: none;
+    object-fit: contain;
   }
 }
