@@ -718,36 +718,13 @@ ul {
 }
 
 .site-footer {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 24px;
   padding: 36px clamp(20px, 6vw, 86px);
   color: var(--white);
+  text-align: center;
   background: #041324;
 }
 
-.site-footer p,
-.site-footer dl,
-.site-footer dd {
-  margin: 0;
-}
-
-.site-footer dl {
-  display: grid;
-  gap: 8px;
-}
-
-.site-footer div {
-  min-width: 0;
-}
-
-.site-footer dt {
-  color: #aebdcd;
-  font-size: 0.82rem;
-}
-
 .site-footer small {
-  grid-column: 1 / -1;
   color: #aebdcd;
 }
 
@@ -887,7 +864,4 @@ ul {
     padding: 54px 18px;
   }
 
-  .site-footer {
-    grid-template-columns: 1fr;
-  }
 }
